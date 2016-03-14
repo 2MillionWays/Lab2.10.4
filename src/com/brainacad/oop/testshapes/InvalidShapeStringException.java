@@ -13,4 +13,6 @@ public class InvalidShapeStringException extends Exception {
     public String getMessage() {
         return message;
     }
+    
+    /* In case of this task you don't need here String message field. You can use it from Exception class
 }
