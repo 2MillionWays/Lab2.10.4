@@ -30,9 +30,9 @@ public abstract class Shape implements Drawable {
         StringTokenizer stringTokenizer = new StringTokenizer(str, ":, ");
         String type = stringTokenizer.nextToken();
 
-        if (type.equals("Rectangle")){
+        if (type.equals("Rectangle")){                               //it's better idea to use case instead of many if...if...if
             String conditionRec = "(Rectangle):[A-Z]+:\\d+,\\d+";
-            Pattern patternOne = Pattern.compile(conditionRec);
+            Pattern patternOne = Pattern.compile(conditionRec);      //very good idea!
             Matcher matcherOne = patternOne.matcher(str);
 
             if (!matcherOne.matches())
